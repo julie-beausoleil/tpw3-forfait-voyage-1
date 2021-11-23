@@ -28,7 +28,7 @@ import { ListeForfaitCompletComponent } from './liste-forfait-complet/liste-forf
     ForfaitMiniComponent,
     ForfaitComponent,
     ListeForfaitComponent,
-    ListeForfaitCompletComponent
+    ListeForfaitCompletComponent,
   ],
   imports: [
     BrowserModule,
