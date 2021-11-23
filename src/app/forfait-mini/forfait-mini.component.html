@@ -1,0 +1,29 @@
+<div class="flex">
+  <mat-card class="example-card">
+    <div class="contenu">
+      <div class="blocGauche">
+        <mat-card-subtitle>{{ destination }} de {{ villeDepart }}</mat-card-subtitle>
+        <mat-card-title>{{ nom }}</mat-card-title>
+        <app-etoiles></app-etoiles>
+      </div>
+      <div>
+        <mat-card-content class="details">
+        
+          <div *ngIf="rabais ===0; else elseBlock">
+                      <p class="rabais">{{ prix }}&thinsp;$</p>
+          </div>
+          <ng-template #elseBlock>
+            <p class="prix">{{ prix }}&thinsp;$</p>
+            <p class="rabais">{{ prixfinal }}&thinsp;$</p>
+          </ng-template>
+        
+      
+
+          <p>Taxes et frais inclus</p>
+          <p>{{ dateDepart }} • 7 jours</p>
+        </mat-card-content>
+      </div>
+    </div>
+  </mat-card>
+</div>
+

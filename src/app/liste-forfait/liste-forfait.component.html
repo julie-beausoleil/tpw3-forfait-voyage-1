@@ -1,0 +1,9 @@
+<!-- *ngIF -- Si tu as un produit, voici ce que tu vas faire -->
+
+<div *ngIf="forfait && forfait.vedette==true" class="flex">
+  <div class="card">
+      <app-forfait-mini [destination]="forfait.destination" [villeDepart]="forfait.villeDepart" [nom]="forfait.hotel.nom" [prix]="forfait.prix" [prixfinal]="(forfait.prix)-(forfait.rabais)" [dateDepart]="forfait.dateDepart" [rabais]="forfait.rabais"></app-forfait-mini>
+    </div>
+  </div> 
+
+  

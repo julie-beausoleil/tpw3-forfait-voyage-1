@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  margin: 2rem;
+}
+
+
+div {
+  margin: 0.5rem;
+
+}
+
+mat-divider {
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+  flex-basis: 1 1 33%;
+
+}

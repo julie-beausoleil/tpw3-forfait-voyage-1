@@ -1,0 +1,18 @@
+<!-- *ngIF -- Si tu as un produit, voici ce que tu vas faire -->
+<div *ngIf="forfait" class="flex ">
+    <ul class="card">
+        <li><app-forfait-complet [destination]="forfait.destination" [villeDepart]="forfait.villeDepart" [nom]="forfait.hotel.nom" [coordonnees]="forfait.hotel.coordonnees" 
+        [nombreEtoiles]="forfait.hotel.nombreEtoiles" [nombreChambre]="forfait.hotel.nombreChambre"  [prix]="forfait.prix" [prixfinal]="(forfait.prix)-(forfait.rabais)"  [dateDepart]="forfait.dateDepart" [dateRetour]="forfait.dateRetour" [rabais]="forfait.rabais" [caracteristiques]="forfait.hotel.caracteristiques"></app-forfait-complet></li>
+      </ul>
+    </div> 
+  
+
+  <!-- Doit arranger les caractéristiques 
+  forfait.vedette==true"
+  -->
+
+  <!--
+  <div class="forfaitVedetteOutline" [ngClass]="forfait.vedette?'forfaitVedetteOutline':''">test</div>
+  -->
+
+  <!--  -->

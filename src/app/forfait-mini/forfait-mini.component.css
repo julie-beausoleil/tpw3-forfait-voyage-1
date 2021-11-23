@@ -1,0 +1,61 @@
+/* conteneur qui contient les cards */
+
+
+
+.flex {
+  display: flex;
+  align-content: flex-start;
+
+
+}
+
+.example-card {
+  display: flex;
+  margin: 0.5rem;
+  min-width: 300px;
+  justify-content: space-between;
+  align-content: space-between;
+
+
+}
+
+
+
+.contenu {
+  display: flex;
+  min-width: 28%;
+  justify-content: space-between;
+  align-items: flex-start;
+
+
+}
+
+.details {
+  text-align: end;
+  align-items: center;
+}
+
+p {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.prix {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: red;
+  font-weight: bold;
+  text-decoration: 2px line-through red;
+  margin-right: 5%;
+}
+
+.rabais {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bolder;
+}
+
+mat-card-title {
+  font-size: 1rem;
+}

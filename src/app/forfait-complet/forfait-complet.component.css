@@ -1,0 +1,56 @@
+.example-card {
+  margin: 1rem 0.5rem;
+  min-width: 200px;
+
+
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  /* border: 1px solid orange; */
+}
+
+.flexEtoile {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.caracteristiques {
+  max-width: 40%;
+
+}
+
+.prix {
+  display: inline-block;
+  font-size: 1rem;
+  color: red;
+  font-weight: bold;
+  text-decoration: 2px line-through red;
+  margin-right: 5%;
+  text-align: right;
+}
+
+.rabais {
+  display: inline-block;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  font-weight: bolder;
+}
+
+
+.details {
+  text-align: end;
+  align-items: center;
+}
+
+.forfaitVedetteOutline {
+  border: 2px dotted red;
+}
+
+p {
+  font-size: 0.5rem;
+}

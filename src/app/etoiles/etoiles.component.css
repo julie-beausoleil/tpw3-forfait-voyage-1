@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.material-icons {
+  font-size: 18px;
+  color: gold;
+  width: 16px;
+}

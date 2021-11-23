@@ -1,0 +1,70 @@
+<mat-card class="example-card" [ngClass]="{'forfaitVedetteOutline': !vedette}">
+  <div class="flex">
+    <div>
+      <mat-card-title-group>
+        <mat-card-subtitle>{{ destination }} de {{ villeDepart }}</mat-card-subtitle>
+        <mat-card-title>{{ nom }}</mat-card-title>
+      </mat-card-title-group>
+      
+      <div class="flexEtoile">
+
+      <app-etoiles></app-etoiles>{{ nombreEtoiles }}
+    </div>
+      Coordonnées&thinsp;: {{ coordonnees }}<br>
+      Nombre de chambres&thinsp;: {{ nombreChambre }}<br>
+      <!--{{ caracteristiques }}, -->
+      Départ et retour&thinsp;: {{ dateDepart }} au {{ dateRetour }}
+    </div>
+<div>
+   {{ caracteristiques }}
+</div>
+
+
+    <div class="caracteristiques">
+      <mat-card-content class="details">
+        <div *ngIf="rabais ===0; else elseBlock">
+          <p class="rabais">{{ prix }}&thinsp;$</p>
+        </div>
+        <ng-template #elseBlock>
+          <p class="prix">{{ prix }}&thinsp;$</p>
+          <p class="rabais">{{ prixfinal }}&thinsp;$</p>
+        </ng-template>
+        <p>Taxes et frais inclus</p>
+        <p>{{ dateDepart }} • 7 jours</p>
+      </mat-card-content>
+    </div>
+  </div>
+</mat-card>
+
+
+
+<!-- Ce code fonctionne codé à la dure
+<mat-card class="example-card">
+  <div class="flex">
+    <div class="caracteristiques">
+      <mat-card-title-group>
+        <mat-card-subtitle>Coordonnées, ville</mat-card-subtitle>
+        <mat-card-title>Hotel</mat-card-title>
+      </mat-card-title-group>
+      <app-etoiles></app-etoiles>
+      <div>
+        nombre de chambre,
+        caracteristiques,
+        date départ,
+        date retour
+      </div>
+    </div>
+
+
+    <div class="flex">
+      <mat-card-content>
+        <div class="details">
+          <p class="prix">3000&thinsp;$</p>
+          <p class="rabais">1000&thinsp;$</p>
+          <p>Taxes et frais inclus.</p>
+        </div>
+      </mat-card-content>
+    </div>
+  </div>
+</mat-card>
+/Ce code fonctionne codé à la dure -->
