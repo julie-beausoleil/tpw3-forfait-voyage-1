@@ -15,6 +15,7 @@ export class ForfaitMiniComponent implements OnInit {
   @Input() prix = 0;
   @Input() rabais = 0;
   @Input() dateDepart = '';
+  @Input() dateRetour = '';
   @Input() prixfinal = 0;
 
   constructor() { }

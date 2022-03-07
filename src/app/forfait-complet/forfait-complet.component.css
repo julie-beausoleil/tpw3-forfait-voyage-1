@@ -47,8 +47,8 @@
   align-items: center;
 }
 
-.forfaitVedetteOutline {
-  border: 2px dotted red;
+.forfaitvedette {
+  background-color: rgb(255, 0, 0, 0.5);
 }
 
 p {

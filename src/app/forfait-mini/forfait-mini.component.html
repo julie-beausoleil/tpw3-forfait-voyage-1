@@ -5,6 +5,7 @@
         <mat-card-subtitle>{{ destination }} de {{ villeDepart }}</mat-card-subtitle>
         <mat-card-title>{{ nom }}</mat-card-title>
         <app-etoiles></app-etoiles>
+        <p class="rouge">Rabais de {{ rabais }}&thinsp;$</p>
       </div>
       <div>
         <mat-card-content class="details">
@@ -20,7 +21,7 @@
       
 
           <p>Taxes et frais inclus</p>
-          <p>{{ dateDepart }} • 7 jours</p>
+          <p>{{ dateDepart }} au {{ dateRetour }}</p>
         </mat-card-content>
       </div>
     </div>

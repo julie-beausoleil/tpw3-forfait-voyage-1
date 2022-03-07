@@ -59,3 +59,8 @@ p {
 mat-card-title {
   font-size: 1rem;
 }
+
+.rouge {
+  color: red;
+  font-size: 1rem;
+}

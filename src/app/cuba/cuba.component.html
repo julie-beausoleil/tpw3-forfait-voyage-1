@@ -1,0 +1,37 @@
+<h1>{{titre}}</h1>
+<!-- <app-fiche-produit *ngFor="let produit of produits" [produit]="produit"></app-fiche-produit>
+ -->
+
+<table mat-table #tableForfaits [dataSource]="forfaits | cuba">
+
+    <ng-container matColumnDef="hotel">
+        <th mat-header-cell *matHeaderCellDef> Hôtel </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.hotel.nom}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="coordonnees">
+        <th mat-header-cell *matHeaderCellDef> Coordonnées </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.hotel.coordonnees}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="nombre_etoiles">
+        <th mat-header-cell *matHeaderCellDef> Nombre d'étoiles </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.hotel.nombreEtoiles}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="prix">
+        <th mat-header-cell *matHeaderCellDef> Prix </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.prix}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="rabais">
+        <th mat-header-cell *matHeaderCellDef> Rabais </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.rabais}} </td>
+    </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+
+</table>
